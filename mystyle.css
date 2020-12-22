@@ -1,7 +1,8 @@
 
   .viewport-header {
     position: relative;
-    margin-bottom: -7vh;
+    margin-top: 25vh;
+    margin-bottom: -5vh;
     text-align: center;
     display: flex;
     align-items: center;
@@ -27,7 +28,7 @@ video {
 }
 
 #main_viewer{
-  margin-bottom: 489px;
+  margin-bottom: 350px;
   display: flex;
   flex-direction: column;
   justify-content: center;
