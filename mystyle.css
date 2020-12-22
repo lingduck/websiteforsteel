@@ -1,12 +1,13 @@
 
   .viewport-header {
     position: relative;
-    height: 100vh;
+    margin-bottom: -7vh;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
     color: red;
+    
 }
 
 video {
@@ -20,12 +21,24 @@ video {
 }
 
 .btns {
+
   font-family: Arial;
+ 
+}
+
+#main_viewer{
+  margin-bottom: 489px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .my-audio {
   
 }
+
+
 
 button {
   display: inline-block;
