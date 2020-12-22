@@ -2,34 +2,28 @@
 <html>
 
 <head>
-
     <title>   Aztecs  5v5/2v2  </title>
-    
-    
     <link rel="stylesheet" href="mystyle.css">
     <link rel="stylesheet" href='script.js'>
     
-    <link rel="shortcut icon" href='ms-icon-70x70.png' type=favicon
-<link rel='icon' href="ms-icon-70x70.png" type="image/x-icon"  >
+    <link rel="shortcut icon" href='ms-icon-70x70.png' type=favicon>
+    <link rel='icon' href="ms-icon-70x70.png" type="image/x-icon"  >
 
-<script type="text/javascript">
-var titleText =  document.title + " ";
+    <script type="text/javascript">
+    var titleText =  document.title + " ";
 
-function titleMarquee() {
+    function titleMarquee() {
 
- titleText = titleText.substring(1, titleText.length) + titleText.substring(0, 1);
- document.title = titleText;
- setTimeout("titleMarquee()", 450);
- }
-</script>
+    titleText = titleText.substring(1, titleText.length) + titleText.substring(0, 1);
+    document.title = titleText;
+    setTimeout("titleMarquee()", 450);
+    }
+    </script>
+</head>
 
-<div style="width:500px; margin:auto; position: absolute; z-index: 1; bottom: -150px; left: 300x;">
-  <audio controls autoplay>
-     <source src="No sleep1.mp3">This browser does not support the audio tag
-  </audio>
-</div>
+<body onload="titleMarquee()">
 
-<video playsinline autoplay muted loop poster="polina.jpg" id="bgvid">
+  <video playsinline autoplay muted loop poster="polina.jpg" id="bgvid">
     <source src="Milkyway.mp4" type="video/webm">
     <source src="Milkyway.mp4" type="video/mp4">
   </video>
@@ -40,22 +34,17 @@ function titleMarquee() {
 
   </header>
 
+  <div class="btns">
+    <button class="btn success">Discord</button>
+    <button class="btn info">HvH server</button>
+  </div>
 
-
-
-
-</head>
-
-<body onload="titleMarquee()">
-
-  <font color=arial>
-
-<div style = "position:absolute; right:1084px; top:750px;">
-<button class="btn success">Discord</button>
-<button class="btn info">HvH server</button>   
-
-
-
+  <div class="my-audio">
+    <audio controls autoplay>
+      <source src="No sleep1.mp3">This browser does not support the audio tag
+    </audio>
+  </div>
+</body>  
 
 
 
