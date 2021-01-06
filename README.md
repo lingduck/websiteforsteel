@@ -1,5 +1,5 @@
 # websiteforsteel
 website for aztec hvh
-IT has an issue when i go to open the website you cant see the music
-coz the background get infront of the music controls
-see my code and fix it (:
+
+Need help alligning the audio button
+it is alligned in the middle and dont know how to allign it in the bottom left
