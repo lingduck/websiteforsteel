@@ -56,3 +56,9 @@ button {
 button{
   transition-duration: 0.4s;
 }
+
+.sound {
+  margin-top: 500px; 
+  margin-right: 600px; 
+
+}

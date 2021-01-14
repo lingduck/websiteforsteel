@@ -10,25 +10,44 @@
     <link rel='icon' href="ms-icon-70x70.png" type="image/x-icon"  >
 
     
-    <script type="text/javascript">
-    window.addEventListener("DOMContentLoaded", event => {
-      const audio = document.querySelector("audio");
-      audio.volume = 0.5;
-      audio.play();
-    })
+    <script language=javascript>
+      var rev = "fwd";
+      function titlebar(val){
+          var msg  = "Aztecs  5v5/2v2";
+          var res = " ";
+          var speed = 300;
+          var pos = val;
+          msg = "   |-"+msg+"-|";
+          var le = msg.length;
+          if(rev == "fwd"){
+              if(pos < le){
+                  pos = pos+1;
+                  scroll = msg.substr(0,pos);
+                  document.title = scroll;
+                  timer = window.setTimeout("titlebar("+pos+")",speed);
+              }
+              else {
+                  rev = "bwd";
+                  timer = window.setTimeout("titlebar("+pos+")",speed);
+              }
+          }
+          else {
+              if(pos > 0) {
+                  pos = pos-1;
+                  var ale = le-pos;
+                  scrol = msg.substr(ale,le);
+                  document.title = scrol;
+                  timer = window.setTimeout("titlebar("+pos+")",speed);
+              }
+              else {
+                  rev = "fwd";
+                  timer = window.setTimeout("titlebar("+pos+")",speed);
+              }
+          }
+      }
+      titlebar(0);
+  </script>
 
-
-    var titleText =  document.title + " ";
-
-    function titleMarquee() {
-
-    titleText = titleText.substring(1, titleText.length) + titleText.substring(0, 1);
-    document.title = titleText;
-    setTimeout("titleMarquee()", 450);
-    }
-
-    
-    </script>
 </head>
 
 <body onload="titleMarquee()">
@@ -45,14 +64,18 @@
     </header>
 
     <div class="btns">
-      <button class="btn success">Discord</button>
-      <button class="btn info">HvH server</button>
+      <a href="https://discord.gg/pCRGqqU69E" target="_blank">
+      <button class="btn success">Discord</button></a>
+      <a href="steam://connect/176.57.158.154:27015;password aztecs5v5" target="_blank">
+      <button class="btn info">HvH server</button></a>
     </div>
-  </div>
-    <div style="width:500px; margin:auto; position:relative;">
-     <audio controls style="width:100%;">
+  </div> 
+  <div style="width:350px; margin:auto; position: absolute;;">
+    <div  id="audio" >
+    <audio class="sound" controls style="width:100%;">
        <source src="No sleep1.mp3">This browser does not support the audio tag
     </audio>
+    </div>
  </div>
 </body>  
 
