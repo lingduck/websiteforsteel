@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="mystyle.css">
+   
+    <link rel="shortcut icon" href='favicon.ico.png' type=favicon>
+    <link rel='icon' href="favicon.ico.png" type="image/x-icon"  >
+
+   <script language=javascript>
+        var rev = "fwd";
+        function titlebar(val){
+            var msg  = "Local's market";
+            var res = " ";
+            var speed = 300;
+            var pos = val;
+            msg = "   |-"+msg+"-|";
+            var le = msg.length;
+            if(rev == "fwd"){
+                if(pos < le){
+                    pos = pos+1;
+                    scroll = msg.substr(0,pos);
+                    document.title = scroll;
+                    timer = window.setTimeout("titlebar("+pos+")",speed);
+                }
+                else {
+                    rev = "bwd";
+                    timer = window.setTimeout("titlebar("+pos+")",speed);
+                }
+            }
+            else {
+                if(pos > 0) {
+                    pos = pos-1;
+                    var ale = le-pos;
+                    scrol = msg.substr(ale,le);
+                    document.title = scrol;
+                    timer = window.setTimeout("titlebar("+pos+")",speed);
+                }
+                else {
+                    rev = "fwd";
+                    timer = window.setTimeout("titlebar("+pos+")",speed);
+                }
+            }
+        }
+        titlebar(0);
+    </script>
+  
+</head>
+
+<body style="background-color:powderblue;">
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Marketplace</a>
+          <div class="dropdown-content">
+            <a href="Fivem.html">Fivem</a>
+            <a href="Ingame.html">Ingame</a>
+            <a href="Discord.html">Discord stuff</a>
+            <a href="paysafe.html">paysafe to paypal</a>
+          </div>
+        <!--<li><a href="about.html">about</a></li>!-->
+        <li><a href="contact.html">contact</a>
+        <li><a href="tos.html">TOS</a>
+        </li>
+      </ul>
+
+      <h3>
+        <font size="15" face="arial">
+        <b>Ingame items for sale</b>
+    </font>
+    </h3>
+
+
+
+
+
+
+
+</body>
+</html>

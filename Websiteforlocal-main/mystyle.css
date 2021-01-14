@@ -1,0 +1,160 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover, .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  }
+  
+  li.dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {background-color: #3e8e41;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+#paysafe {
+  display: flex;
+  flex-direction: column;
+  color: black;
+  padding: 20px;
+  text-align: center;
+  font-size: 35px;
+  font-family:Arial, Helvetica,;
+} 
+
+.center {
+  display: none;
+  width: 300px;
+  right: 0;
+  top: 260px;
+  position: absolute;
+}
+
+.paysafe1 { 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 10px; 
+} 
+
+@media (min-width:718px) {
+  .center {
+    display: flex;
+  }
+}
+
+.buttonpsc{
+  background-color: #4CAF50;
+  font-size: 50px;
+  border-style: hidden;
+  border-radius: 12px;
+  padding: 12px 28px;
+  
+}
+
+.buttonpsc:hover {
+  background-color: #4CAF50; 
+  color: white;
+}
+
+.buttonpsc {
+  transition-duration: 0.4s;
+}
+
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px;  
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical 
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.bigger {
+  color:black;
+  font-size: 30px;
+}
+
+.buttonsupport1{
+  background-color: black;
+  color:white;
+  font-size: 50px;
+  border-style: hidden;
+  border-radius: 12px;
+  padding: 12px 28px;
+  
+}
+
+.buttonsupport1:hover {
+  background-color: gray; 
+  color: white;
+}
+
+.buttonsupport1 {
+  transition-duration: 0.4s;
+}
+
+.Gif {
+  width: 400px;
+  margin-left:800px;
+  margin-top: -1300px;
+  margin-right:100px; 
+}
